@@ -65,27 +65,55 @@ const bottomImg = document.querySelector(".middle-img");
 bottomImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 
 
+const featureHeading = document.querySelector('.main-content .text-content:nth-of-type(1) h4');
+featureHeading.textContent = siteContent['main-content']['features-h4'];
 
-const featuresPara = document.querySelector(".text-content h4");
-featuresPara.textContent = siteContent["main-content"]["features-h4"];
+const featurePara = document.querySelector('.main-content .text-content:nth-of-type(1) p');
+featurePara.textContent = siteContent['main-content']['features-content'];
 
-const aboutPara = document.querySelector(".text-content p");
-aboutPara.textContent = siteContent["main-content"]["features-content"];
+const abouHeading = document.querySelector('.main-content .text-content:nth-of-type(2) h4');
+abouHeading.textContent = siteContent['main-content']['about-h4'];
 
-
-
-// const featuresPara = document.querySelector(".text-content p");
-// featuresPara.textContent = siteContent["main-content"]["features-content"];
-
-// const aboutPara = document.querySelector(".text-content p");
-// aboutPara.textContent = siteContent["main-content"]["about-content"];
+const aboutPara = document.querySelector('.main-content .text-content:nth-of-type(2) p');
+aboutPara.textContent = siteContent['main-content']['about-content'];
 
 
 
+const bottomContentHeading = document.querySelector(".bottom-content .text-content:nth-of-type(1) h4");
+bottomContentHeading.textContent = siteContent["main-content"]["services-h4"];
+
+const bottomContentPara = document.querySelector(".bottom-content .text-content:nth-of-type(1) p");
+bottomContentPara.textContent = siteContent["main-content"]["services-content"];
+
+const bottomContentHeading2 = document.querySelector(".bottom-content .text-content:nth-of-type(2) h4");
+bottomContentHeading2.textContent = siteContent["main-content"]["product-h4"];
+
+const bottomContentPara2 = document.querySelector(".bottom-content .text-content:nth-of-type(2) p");
+bottomContentPara2.textContent = siteContent["main-content"]["product-content"];
+
+const bottomContentHeading3 = document.querySelector(".bottom-content .text-content:nth-of-type(3) h4");
+bottomContentHeading3.textContent = siteContent["main-content"]["vision-h4"];
+
+const bottomContentPara3 = document.querySelector(".bottom-content .text-content:nth-of-type(3) p");
+bottomContentPara3.textContent = siteContent["main-content"]["vision-content"];
 
 
 
+const contactHeading = document.querySelector(".contact h4");
+contactHeading.textContent = siteContent["contact"]["contact-h4"];
 
+const contactAddress = document.querySelector(".contact p:nth-of-type(1)");
+contactAddress.textContent = siteContent["contact"]["address"];
 
+const contactPhone = document.querySelector(".contact p:nth-of-type(2)");
+contactPhone.textContent = siteContent["contact"]["phone"];
 
+const contactEmail  = document.querySelector(".contact p:nth-of-type(3)");
+contactEmail.textContent = siteContent["contact"]["email"];
 
+// "footer": {
+//   "copyright": "Copyright Great Idea! 2018"
+// },
+
+const footerSect = document.querySelector("footer p");
+footerSect.textContent = siteContent["footer"]["copyright"];
